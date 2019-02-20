@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'^(?P<album_id>[0-9]+)/$', views.detail),
     url(r'^learn/$', views.showForm),
     url(r'^countss/$', views.showCount, name='count'),
-    url(r'^home/$', views.showForm, name='home')
+    url(r'^homepage/$', views.showForm, name='home')
 ]
