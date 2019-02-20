@@ -1,0 +1,11 @@
+{{text}}
+</br>
+<a href="{% url 'home' %}">Back to homepage</a>
+<br>
+word length = {{length}}
+</br>
+dictionery = {{worddict}}
+<br>
+{% for word,value in worddict %}
+	{{word}} = {{value}}
+{%endfor%}

@@ -1,0 +1,13 @@
+{% extends 'music/base.html' %}
+{% block body %}
+
+{%for album in all_albums %}
+<div class="container" >
+  <div style="width: 50%; float: left;">
+    {{album.recordId}}
+  </div>
+</div>
+
+{%endfor%}
+
+{% endblock %}

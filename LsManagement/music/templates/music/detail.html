@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music World</title>
+</head>
+<body>
+<div class="container">
+<div style="width: 978px; margin: 0 auto;">
+	<div class="header" style="width: 978px; height:100px; background-color: #e2e2e2; text-align: center; ">
+		<div style="width:300px; float: left; color: green; padding: 10px;">
+			{{album.artist}}
+		</div>
+		<div style="margin: 10px auto; padding: 20px;float: left;">
+			<form>
+				<input style="width: 409px; height: 35px;" type="text" name="searchSongs" id="searchSongs">
+				<button style="padding: 11px;" >Search</button>
+			</form>
+		</div>
+		<div style="clear: both;" ></div>
+	</div>
+	<div class="left" style="width: 250px; height:600px; float: left;">
+		<div style="display: inline-block;">
+		{% for types in all_types %}  
+			<div style="margin-top: 10px;padding: 2px;">		{{types.song_type}}
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+	<div class="body" style="width: 728px;height:600px;background-color: green;float: left;"><audio controls="controls">
+  <source src="https://youtu.be/TRa9IMvccjg?t=16" type="audio/mpeg">
+</audio></div>
+	<div style="clear: both;"></div>
+	<div class="footer" style="width: 978px; text-align: center; height: 100px; padding: 10px;">
+		Powered by musicworld.com @2017-2018
+	</div>
+</div>
+	
+</div>
+
+</body>
+</html>
